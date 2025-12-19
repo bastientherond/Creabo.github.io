@@ -81,12 +81,17 @@
       }
       footer {
         margin-top: 28px;
+      }
+      footer ul {
+        list-style: none;
         display: flex;
         justify-content: center;
         gap: 16px;
         flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
       }
-      footer span {
+      footer li {
         padding: 10px 14px;
         border-radius: 12px;
         background: rgba(255, 255, 255, 0.05);
@@ -104,7 +109,7 @@
   </head>
   <body>
     <main>
-      <div class="pill" role="status" aria-label="Statut : documentation en cours">
+      <div class="pill" role="status">
         <span class="dot" aria-hidden="true"></span>Documentation en cours
       </div>
       <h1>Creabo</h1>
@@ -116,9 +121,11 @@
         Merci de votre patience pendant que nous préparons une expérience de documentation simple et claire.
       </p>
       <footer role="contentinfo">
-        <span>Statut : brouillon</span>
-        <span>Hébergé sur GitHub Pages</span>
-        <span>Mise à jour : en cours</span>
+        <ul class="status-list">
+          <li>Statut : brouillon</li>
+          <li>Hébergé sur GitHub Pages</li>
+          <li>Mise à jour : en cours</li>
+        </ul>
       </footer>
     </main>
   </body>
